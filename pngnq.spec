@@ -1,12 +1,13 @@
 Summary:	Pngnq is a tool for quantizing PNG images in RGBA format
 Name:		pngnq
-Version:	1.0
+Version:	1.1
 Release:	1
 License:	BSD with advertising and MIT and BSD
 Group:		Applications/Multimedia
 URL:		http://pngnq.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/pngnq/%{name}-%{version}.tar.gz
-# Source0-md5:	2d2cdacf0284477c662fee888c8092d5
+# Source0-md5:	fdbb94d504931b50c54202b62f98aa44
+Patch0:		%{name}-includes.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libpng-devel
@@ -21,6 +22,7 @@ many types of images.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__aclocal}
