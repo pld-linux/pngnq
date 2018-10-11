@@ -5,7 +5,7 @@ Release:	1
 License:	BSD with advertising and MIT and BSD
 Group:		Applications/Multimedia
 URL:		http://pngnq.sourceforge.net/
-Source0:	http://dl.sourceforge.net/pngnq/%{name}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/pngnq/%{name}-%{version}.tar.gz
 # Source0-md5:	2d2cdacf0284477c662fee888c8092d5
 BuildRequires:	autoconf
 BuildRequires:	automake
